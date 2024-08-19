@@ -1,6 +1,7 @@
 variable "env" {
   description = "The environment of the GCP project."
   type        = string
+  default     = "dev"
 }
 
 variable "project_id" {
