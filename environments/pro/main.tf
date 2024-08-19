@@ -14,3 +14,11 @@ module "cloud_run_service" {
   cpu             = var.cpu
   invoker_member  = var.invoker_member
 }
+
+module "artifact_registry" {
+  source = "../../modules/artifact_registry"
+
+  project_id      = var.project_id
+  region          = var.region
+  repository_id   = "repository-${var.project_id}-${var.env}"
+}

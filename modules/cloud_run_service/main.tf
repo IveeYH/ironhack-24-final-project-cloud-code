@@ -1,4 +1,4 @@
-resource "google_cloud_run_service" "ml_service" {
+resource "google_cloud_run_service" "ml_api_service" {
   name     = var.service_name
   location = var.region
 

@@ -1,3 +1,8 @@
+variable "env" {
+  description = "The environment of the GCP project."
+  type        = string
+}
+
 variable "project_id" {
   description = "The ID of the GCP project."
   type        = string

@@ -99,6 +99,7 @@ Each environment (`dev`, `qa`, `pro`) has its own directory with Terraform confi
 #### Example: `terraform.tfvars` for `dev` Environment
 
 ```hcl
+env        = "dev"
 project_id = "your-gcp-project-id"
 region     = "europe-southwest1"
 ```
