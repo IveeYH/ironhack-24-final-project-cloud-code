@@ -12,7 +12,7 @@ variable "region" {
 variable "service_name" {
   description = "The name of the Cloud Run service."
   type        = string
-  default     = "ml-model-service-dev"
+  default     = "ml-model-service-qa"
 }
 
 variable "container_image" {
