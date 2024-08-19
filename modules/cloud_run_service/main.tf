@@ -26,9 +26,9 @@ resource "google_cloud_run_service" "ml_api_service" {
 }
 
 resource "google_cloud_run_service_iam_member" "invoker" {
-  location    = google_cloud_run_service.ml_service.location
-  project     = google_cloud_run_service.ml_service.project
-  service     = google_cloud_run_service.ml_service.name
+  location    = google_cloud_run_service.ml_api_service.location
+  project     = google_cloud_run_service.ml_api_service.project
+  service     = google_cloud_run_service.ml_api_service.name
   role        = "roles/run.invoker"
   member      = var.invoker_member
 }
